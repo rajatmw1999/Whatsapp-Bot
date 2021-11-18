@@ -8,8 +8,8 @@ async function handleSubmit() {
             phone = '+91' + phone;
             const body = { name: name, phone: phone, gender: gender };
             const response = await fetch(
-                'http://localhost:9800/send'
-                // 'https://raftaarcheckin.herokuapp.com/send'
+                // 'http://localhost:9800/send'
+                'https://whatsapp-bot-belikebill.herokuapp.com/send'
                 , {
                     method: 'POST',
                     body: JSON.stringify(body),
